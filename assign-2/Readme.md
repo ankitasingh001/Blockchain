@@ -18,14 +18,14 @@ The code consists of the following scripts :
 
 ## RUNNING THE CODE :
 
-(i) Hard code the seed IP and port number in the "Client.py" and "AdvClient.py" files.
-(ii) Run Seed.py in the format :
+1. Hard code the seed IP and port number in the "Client.py" and "AdvClient.py" files.
+2. Run Seed.py in the format :
 	python3 Seed.py <IP> <PORT> 
-(iii) Run Client.py in the format
+3. Run Client.py in the format
     python3 Client.py <IP> <PORT> <nodeHashPower in %>
-(iv) Run AdvClient.py in the format
+4. Run AdvClient.py in the format
     python3 AdvClient.py <IP> <PORT> <nodeHashPower in %>
-(v) draw_tree.py has the following dependencies :
+5. draw_tree.py has the following dependencies :
 
 Python packages:
 
@@ -37,6 +37,7 @@ Python packages:
  sudo python3 -m pip install pygraphviz
 ```
 
-python3 draw_tree.py <clientdbname>
-Client Db name= "client"+str(port_number%10000)
-AdvClient Db name= "Advclient"+str(port_number%10000)
+``` python3 draw_tree.py <clientdbname> ```
+
+- Client Db name= "client"+str(port_number%10000)
+- AdvClient Db name= "Advclient"+str(port_number%10000)
